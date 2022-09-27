@@ -1,4 +1,3 @@
-import math
 from typing import List
 
 
@@ -14,9 +13,5 @@ class Solution:
         while number > 0:
             res.insert(0, number % 10)
             number = int(number//10)
-        print(res)
         return res
 
-
-x = Solution()
-x.plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3])
