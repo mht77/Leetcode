@@ -3,5 +3,6 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
-/.idea
-/Leetcode.Python/.idea/
+**.idea
+**.vscode
+*.DS_Store
