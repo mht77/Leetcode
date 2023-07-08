@@ -8,4 +8,14 @@ public class ListNode
         this.val = val;
         this.next = next;
     }
+
+    public void ConsoleWrite()
+    {
+        Console.Write(val);
+        while (next != null)
+        {
+            Console.Write($", {next.val}");
+            next = next.next;
+        }
+    }
 }
