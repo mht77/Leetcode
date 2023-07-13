@@ -19,14 +19,14 @@ class Solution:
         if val == root.val:
             return root
 
-        r = self.DFS(root.right, val)
+        if val < root.val:
+            r = self.DFS(root.left, val)
+            if r:
+                return r
 
-        if r:
-            return r
-
-        r = self.DFS(root.left, val)
-
-        if r:
-            return r
+        if val > root.val:
+            r = self.DFS(root.right, val)
+            if r:
+                return r
 
         return None
