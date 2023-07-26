@@ -1,6 +1,6 @@
-namespace LeetCode.Hard;
+namespace LeetCode.Medium;
 
-public class H72
+public class M72
 {
     public int MinDistance(string word1, string word2)
     {
